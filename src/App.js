@@ -2,12 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 
-class TodoElement extends React.Component {
-
-  render() {
-    return <p>Tâche 1</p>;
-  }
-
+function TodoElement(props) {
+  return  <div>
+            <input type="checkbox" checked={ props.checked } />
+            <label>{ props.children }</label>
+          </div>;
 }
 
 class Card extends React.Component {
@@ -24,9 +23,9 @@ class Card extends React.Component {
 function App() {
   return (
     <div>
-      <Card>
-      <TodoElement />
-      </Card>
+      <TodoElement checked={false}>Tâche 1</TodoElement>
+      <TodoElement checked={false}>Tâche 2</TodoElement>
+      <TodoElement checked={true}>Tâche 3</TodoElement>
     </div>
   );
 }
