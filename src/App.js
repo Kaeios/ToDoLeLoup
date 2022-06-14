@@ -1,6 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+import { ReactElement } from 'react'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+
+
+
+
 
 function TodoElement(props) {
   return  <div>
@@ -12,9 +25,14 @@ function TodoElement(props) {
 class Card extends React.Component {
 
   render() {
-    return <div class="card">
-            <button>test</button>
-          </div>;
+    return  <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><TodoElement /></li>
+              </ul>
+
+              <i class="fa-thin fa-abacus"></i>
+                <a class="btn btn-outline-primary">test</a>
+              </div>
       
   }
 
