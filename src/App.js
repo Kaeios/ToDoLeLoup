@@ -27,7 +27,10 @@ class Card extends React.Component {
   render() {
     return  <div class="card">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"><TodoElement /></li>
+                <li class="list-group-item"><TodoElement checked={false}>Tâche 1</TodoElement></li>
+                <li class="list-group-item"><TodoElement checked={false}>Tâche 2</TodoElement></li>
+                <li class="list-group-item"><TodoElement checked={true}>Tâche 2</TodoElement></li>
+                
               </ul>
 
               <i class="fa-thin fa-abacus"></i>
@@ -41,9 +44,7 @@ class Card extends React.Component {
 function App() {
   return (
     <div>
-      <TodoElement checked={false}>Tâche 1</TodoElement>
-      <TodoElement checked={false}>Tâche 2</TodoElement>
-      <TodoElement checked={true}>Tâche 3</TodoElement>
+      <Card />
     </div>
   );
 }
