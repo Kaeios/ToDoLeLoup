@@ -1,18 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-import { ReactElement } from 'react'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
-
-
-
+import { faSliders} from '@fortawesome/free-solid-svg-icons'
 
 
 function TodoElement(props) {
@@ -29,11 +20,11 @@ class Card extends React.Component {
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"><TodoElement checked={false}>Tâche 1</TodoElement></li>
                 <li class="list-group-item"><TodoElement checked={false}>Tâche 2</TodoElement></li>
-                <li class="list-group-item"><TodoElement checked={true}>Tâche 2</TodoElement></li>
+                <li class="list-group-item"><TodoElement checked={true}>Tâche </TodoElement></li>
                 
               </ul>
 
-              <i class="fa-thin fa-abacus"></i>
+              <FontAwesomeIcon icon={ faSliders } />
                 <a class="btn btn-outline-primary">test</a>
               </div>
       
