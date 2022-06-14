@@ -10,10 +10,23 @@ class TodoElement extends React.Component {
 
 }
 
+class Card extends React.Component {
+
+  render() {
+    return <div class="card">
+            <button>test</button>
+          </div>;
+      
+  }
+
+}
+
 function App() {
   return (
     <div>
+      <Card>
       <TodoElement />
+      </Card>
     </div>
   );
 }
